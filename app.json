@@ -1,0 +1,113 @@
+{
+  "expo": {
+    "name": "Yüksi",
+    "slug": "yuksi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/appicon.jpg",
+    "scheme": "yuksiindivudualapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.yuksi.individual",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Yük taramak ve fotoğraf çekmek için kamera erişimi gereklidir.",
+          "photosPermission": "Yük fotoğrafı seçmek için galeri erişimi gereklidir."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Çektiğiniz fotoğrafı galerinize kaydedebilmek için izin gereklidir.",
+          "savePhotosPermission": "Çektiğiniz fotoğrafı galerinize kaydedebilmek için izin gereklidir.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Konum bilginiz kargo teslimatı için kullanılacaktır."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Kanguru'ya sesli mesaj gönderebilmek için mikrofon erişimi gereklidir."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Kanguru'ya fotoğraf gönderebilmek için kamera erişimi gereklidir.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Kanguru'ya sesli soru sorabilmek için mikrofon erişimi gereklidir.",
+          "speechRecognitionPermission": "Sesli sorunuzu metne çevirebilmek için konuşma tanıma erişimi gereklidir."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#FF5B04",
+          "enableBackgroundRemoteNotifications": false
+        }
+      ],
+      "expo-background-task",
+      [
+        "@config-plugins/react-native-webrtc",
+        {
+          "cameraPermission": "Görüntülü arama yapabilmek için kamera erişimi gereklidir.",
+          "microphonePermission": "Sesli arama yapabilmek için mikrofon erişimi gereklidir."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "googleMapsApiKey": "",
+      "eas": {
+        "projectId": "cc547aec-879a-4be3-809e-02d7f5988e7d"
+      }
+    },
+    "owner": "yuksis-developer"
+  }
+}

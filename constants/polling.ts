@@ -1,0 +1,1 @@
+export const FOREGROUND_POLL_INTERVAL_MS = 3_000;
